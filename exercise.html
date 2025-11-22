@@ -1,11 +1,245 @@
 <!DOCTYPE html>
-<html lang="sv">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
+<lang="sv">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <ul>
+            <!-- Här jag använder <h1> för rubrik och <p> för stycke. -->
+            <h1>Övning: Skapa en enkel HTML-sida</h1>
+            <p>Följ instruktionerna nedan för att skapa en enkel HTML-sida.</p>
+            <!-- Här jag använder ordered list med <ol> och med länk <a> och <href> var leder länken. -->
+            <!-- Jag använder också <code> för att markera kod. -->
+            <ol>
+                <li>Skapa en ny HTML-fil med namnet <code>exercise.html</code>.</li>
+                <li>Lägg till en rubrik med texten "Min Första HTML-sida".</li>
+                <li>Lägg till ett stycke med valfri text.</li>
+                <li>Lägg till en länk till <a href="https://www.example.com">Example.com</a>.</li>
+                <li>Spara filen och öppna den i din webbläsare för att se resultatet.</li>
+            </ol>
+            <!-- Här jag använder unordered list med <ul> och med <br> -->
+            <!-- Jag använder också <p> för stycke. -->
+            <!---->
+            <ul>
+                <li>HTML står för HyperText Markup Language.</li>
+                <li>HTML används för att skapa webbsidor.</li>
+                <li>HTML-dokument består av element som definieras med taggar.</li>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br> Placeat sapiente quibusdam laboriosam
+                    quia
+                    doloremque! Repellendus itaque quaerat a labore facere.</p>
+                <!-- Nästa steg bli special entities-->
+                <p>Specialtecken i HTML kan skrivas med hjälp av HTML-enheter, till exempel &amp; för & och &lt; för <.<
+                        /p>
+                        <!-- Nästa steg Headings-->
+                        <h2>Olika nivåer av rubriker</h2>
+                        <h1>Rubrik nivå 1</h1>
+                        <h2>Rubrik nivå 2</h2>
+                        <h3>Rubrik nivå 3</h3>
+                        <h4>Rubrik nivå 4</h4>
+                        <h5>Rubrik nivå 5</h5>
+                        <h6>Rubrik nivå 6</h6>
+                        <!--Nästa steg Block element och Inline element-->
+                        <p>Detta är ett <strong>blockelement</strong> som innehåller både <em>inlineelement</em> och
+                            text.
+                        </p>
+                        <p>Blockelement skapar nya rader, medan inlineelement inte gör det.</p>
+                        <p>Exempel på blockelement: &lt;div&gt;, &lt;p&gt;, &lt;h1&gt; - &lt;h6&gt;.</p>
+                        <p>Exempel på inlineelement: &lt;span&gt;, &lt;a&gt;, &lt;strong&gt;, &lt;em&gt;.</p>
+                        <!--Nästa steg images-->
+                        <h2>Bilder i HTML</h2>
+                        <p>För att lägga till en bild i HTML använder du &lt;img&gt;-taggen med attributen
+                            <code>src</code>
+                            och <code>alt</code>.
+                        </p>
+                        <img src="https://via.placeholder.com/150" alt="Exempelbild">
+                        <p>Exempel på bildtagg:</p>
+                        <pre>&lt;img src="bildens_url" alt="beskrivning av bilden"&gt;</pre>
+                        <!--Nästa steg Lists-->
+                        <h2>Listor i HTML</h2>
+                        <p>Det finns två typer av listor i HTML: ordnade listor (&lt;ol&gt;) och oordnade listor
+                            (&lt;ul&gt;).</p>
+                        <p>Exempel på en oordnad lista:</p>
+
+                        <img src="dog" alt="my dog" sizes="50" srcset="100w, 200w, 300w 400w ">
+            </ul>
+            <li>Första punkten</li>
+            <li>Andra punkten</li>
+            <li>Tredje punkten</li>
+            <!-- Nästa steg Tabeller-->
+            <table>
+                <caption>Exempel på en enkel tabell</caption>
+                <thead>
+                    <tr>
+                        <th>Namn</th>
+                        <th>Ålder</th>
+                        <th>Stad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Alice</td>
+                        <td>30</td>
+                        <td>Stockholm</td>
+                    </tr>
+                    <tr>
+                        <td>Bob</td>
+                        <td>25</td>
+                        <td>Göteborg</td>
+                    </tr>
+                    <tr>
+                        <td>Charlie</td>
+                        <td>35</td>
+                        <td>Malmö</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!--Exempel för svårt Tabeler-->
+            <p>Exempel på en tabell med sammanslagna celler:</p>
+            <table>
+                <caption>Tabell med sammanslagna celler</caption>
+                <thead>
+
+                    <tr>
+                        <th>Namn</th>
+                        <th colspan="2">Kontaktinformation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Alice</td>
+                        <th>Email: alice@example.com</th>
+                        <th>Telefon: 123-456-7890</th>
+                    </tr>
+                    <tr>
+                        <td>Bob</td>
+                        <th>Email: bob@example.com</th>
+                        <th>Telefon: 987-654-3210</th>
+                    </tr>
+                    <tr>
+                        <td>Charlie</td>
+                        <th>Email: charlie@example.com</th>
+                        <th>Telefon: 555-555-5555</th>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <colspan="6">Person Information</colspan>
+                    <th> First Name</th>
+                    <th> Last Name</th>
+                    <th> Age
+                    <th>City
+                    <th> Country
+
+                    </th>
+                    <tr>
+                        <td> John</td>
+                        <td> Doe</td>
+                        <td> 28</td>
+                        <td> New York</td>
+                        <td> USA</td>
+                    </tr>
+                    <tr>
+                        <td> Jane</td>
+                        <td> Smith</td>
+                        <td> 32</td>
+                        <td> London</td>
+                        <td> UK</td>
+                    </tr>
+                    <tr>
+                        <td> Emily</td>
+                        <td> Johnson</td>
+                        <td> 24</td>
+                        <td> Sydney</td>
+                        <td> Australia</td>
+                    </tr>
+
+                    <tr>
+                        <td> Michael</td>
+                        <td> Brown</td>
+                        <td> 29</td>
+                        <td> Toronto</td>
+                        <td> Canada</td>
+                    </tr>
+            </table>
+            <tr>
+                <td> Sarah</td>
+                <td> Davis</td>
+                <td> 27</td>
+                <td> Auckland</td>
+                <td> New Zealand</td>
+            </tr>
+            <tfoot>
+                <tr>
+                    <td colspan="10">End of the table</td>
+                </tr>
+            </tfoot>
+            </tbody>
+            </table>
+        </ul>
+        <tr>
+            <input type="text">
+            <input type="password">
+            <input type="email">
+            <input type="checkbox">
+            <input type="radio">
+            <input type="date">
+
+        </tr>
+        <table bordercolor="green">
+            <td bgcol="#FF0000" .A1> Red Cell </td>
+
+        </table>
+
+        <form action="server-page.php">
+            <label>
+                First name:
+            </label>
+            <input type="text" name="firstname">
+            <label>
+                Last name:
+            </label>
+
+            <input type="text" name="lastname">
+            <input type="submit" value="Submit">
+        </form>
+        <form action="submit-form.php" method="post">
+            <label for="username">Användarnamn:</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <label for="password">Lösenord:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <input type="submit" value="Logga in">
+        </form>
+        <form autocomplete="on" action="/submit" method="post">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="birthdate">Födelsedatum:</label>
+            <input type="date" id="birthdate" name="birthdate">
+            <br>
+            <input type="submit" value="Skicka">
+            <textarea name="comments" rows="4" cols="20" placeholder="Skriv dina kommentarer här..."></textarea>
+            <input type="radio" name="gender" value="male"> Man
+            <input type="radio" name="gender" value="female"> Kvinna
+            <input type="radio" name="gender" value="other"> Annat
+            <input type="checkbox" name="subscribe" value="newsletter"> Prenumerera på nyhetsbrev
+            <label for="country">Välj land:</label>
+            <select id="country" name="country">
+                <option value="sweden">Sverige</option>
+                <option value="norway">Norge</option>
+                <option value="denmark">Danmark</option>
+                <option value="finland">Finland</option>
+            </select>
+
+
+        </form>
+
+    </body>
+
+    </html>
